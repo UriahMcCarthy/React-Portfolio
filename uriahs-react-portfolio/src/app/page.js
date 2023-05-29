@@ -42,12 +42,6 @@ export default function Home() {
             </p>
           </div>
 
-
-          <div className='text-6xl flex justify-center gap-16 py-4 text-gray-600'>
-            <AiFillLinkedin />
-            <AiFillGithub />
-          </div>
-
           <div className="relative mx-auto bg-gradient-to-t rounded-full w-80 h-80 mt-20 overflow-hidden">
             <Image src={mypic} layout="fill" objectFit='cover' className=' rounded-full bg-gradient-to-tr ' />
           </div>
@@ -58,12 +52,16 @@ export default function Home() {
         <section>
           <div>
             <h3 className='text-3xl py-1'>Apps</h3>
-            <div className=' flex-auto'>
+            <div className=''>
               <h4 className="py-4 text-teal-600">Tools I Use </h4>
-              <p className='text-grey-800 text-grey-800 py-1'>React js </p>
-              <p className='text-grey-800 text-grey-800 py-1'>Node js</p>
-              <p className='text-grey-800 text-grey-800 py-1'>Heroku</p>
-              <p className='text-grey-800 text-grey-800 py-1'>Handlebars</p>
+            </div>
+
+            <div className=' flex justify-center'>
+
+              <p className='text-grey-800 text-grey-800 py-1 p-5'>React.js </p>
+              <p className='text-grey-800 text-grey-800 py-1 p-5'>Node.js</p>
+              <p className='text-grey-800 text-grey-800 py-1 p-5'>Heroku</p>
+              <p className='text-grey-800 text-grey-800 py-1 p-5'>Handlebars</p>
 
             </div>
           </div>
@@ -75,10 +73,35 @@ export default function Home() {
               <p className='py-2'>
                 insert app description
               </p>
-
-
-
             </div>
+          </div>
+
+          <div>
+            <div className='text-center shadow-xl p-10 my-10'>
+              <Image width={100} height={100} />
+              <h3 className='text-lg font-medium pt=8 pb-2'>App 2</h3>
+              <p className='py-2'>
+                insert app description
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div className='text-center shadow-xl p-10 my-10'>
+              <Image width={100} height={100} />
+              <h3 className='text-lg font-medium pt=8 pb-2'>App 3</h3>
+              <p className='py-2'>
+                insert app description
+              </p>
+            </div>
+          </div>
+
+        </section>
+
+        <section>
+          <div className='text-6xl flex justify-center gap-16 py-4 text-gray-600'>
+            <AiFillLinkedin />
+            <AiFillGithub />
           </div>
 
         </section>
