@@ -3,6 +3,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import Image from 'next/image'
 import mypic from '/Users/uriahmccarthy/Bootcamp/Homework/React-Portfolio/uriahs-react-portfolio/public/ProfilePic.jpeg'
+//import design from ''
 
 export default function Home() {
   return (
@@ -19,14 +20,14 @@ export default function Home() {
           <nav className='py-15 mb-12 flex justify-between'>
             <h1 className="text-xl font-burtons">URIAH</h1>
             <ul className="flex items-center">
+
               <li>
                 <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
               </li>
+
               <li>
                 <a className="bg-gradient-to-b from-cyan-500 to-teal-500 text-white px-4 py-2 ml-9" href="#">Resume</a>
               </li>
-
-
 
             </ul>
           </nav>
@@ -47,13 +48,41 @@ export default function Home() {
             <AiFillGithub />
           </div>
 
-          <div className= "relative mx-auto bg-gradient-to-t rounded-full w-80 h-80 mt-20 overflow-hidden">
-            <Image src={mypic} layout="fill" objectFit='cover' className=' rounded-full bg-gradient-to-tr '/>
+          <div className="relative mx-auto bg-gradient-to-t rounded-full w-80 h-80 mt-20 overflow-hidden">
+            <Image src={mypic} layout="fill" objectFit='cover' className=' rounded-full bg-gradient-to-tr ' />
           </div>
-
 
           <h1>Hello</h1>
         </section>
+
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Apps</h3>
+            <div className=' flex-auto'>
+              <h4 className="py-4 text-teal-600">Tools I Use </h4>
+              <p className='text-grey-800 text-grey-800 py-1'>React js </p>
+              <p className='text-grey-800 text-grey-800 py-1'>Node js</p>
+              <p className='text-grey-800 text-grey-800 py-1'>Heroku</p>
+              <p className='text-grey-800 text-grey-800 py-1'>Handlebars</p>
+
+            </div>
+          </div>
+
+          <div>
+            <div className='text-center shadow-xl p-10 my-10'>
+              <Image width={100} height={100} />
+              <h3 className='text-lg font-medium pt=8 pb-2'>App 1</h3>
+              <p className='py-2'>
+                insert app description
+              </p>
+
+
+
+            </div>
+          </div>
+
+        </section>
+
       </main>
 
 
