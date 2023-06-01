@@ -1,13 +1,25 @@
 import Head from 'next/head'
+import React from "react"
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import Image from 'next/image'
+import Link from 'next/link'
 import mypic from '/Users/uriahmccarthy/Bootcamp/Homework/React-Portfolio/uriahs-react-portfolio/public/ProfilePic.jpeg'
-//import design from ''
+import app1 from '/Users/uriahmccarthy/Bootcamp/Homework/React-Portfolio/uriahs-react-portfolio/public/Mood-Booster.png'
+import app2 from '/Users/uriahmccarthy/Bootcamp/Homework/React-Portfolio/uriahs-react-portfolio/public/Schedule-App.png'
+import app3 from '/Users/uriahmccarthy/Bootcamp/Homework/React-Portfolio/uriahs-react-portfolio/public/Tech-Blog.png'
+
+import Navbar from './Navbar'
+
+
 
 export default function Home() {
   return (
+    
+
+
     <div>
+      <Navbar/>
       <Head>
         <title>Uriahs Portfolio</title>
         <meta name="description" content="General"></meta>
@@ -15,14 +27,17 @@ export default function Home() {
       </Head>
 
       <main className='bg-white px-10 '>
+
+
+
         <section className="min-h-screen">
 
-          <nav className='py-15 mb-12 flex justify-between'>
-            <h1 className="text-xl font-burtons">URIAH</h1>
+          <nav className='py-20 mb-12 flex justify-between'>
+            <h1 className="text-xl font-burtons"></h1>
             <ul className="flex items-center">
 
               <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
+                <BsFillMoonStarsFill className=" cursor-pointer text-2xl" />
               </li>
 
               <li>
@@ -37,16 +52,16 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium">Kevin Uriah McCarthy</h2>
             <h3 className='text-2xl py-2'>App/Web Developer.</h3>
             <p className='text-me py-5 leading-8 text-grey-800'>
-              From the Navajo Reservation,(The Creative Native) Uriah moved to the city with the goal of working in Tech. He started with designing & coordination in Pre-construction technologies. Now He works in developing the best user-friendly
+            Uriah is not the most traditional Navajo name, but it's my middle name. I moved to the city from my reservation with the goal of working in Tech. I started with designing & coordination in Pre-construction technologies. Now I works in developing the best user-friendly
               apps for helping businesses. Let's collaborate together
             </p>
           </div>
 
-          <div className="relative mx-auto bg-gradient-to-t rounded-full w-80 h-80 mt-20 overflow-hidden">
-            <Image src={mypic} layout="fill" objectFit='cover' className=' rounded-full bg-gradient-to-tr ' />
+          <div className="relative mx-auto bg-gradient-to-t rounded-full w-80 h-80  overflow-hidden mb-14">
+            <Image src={mypic} layout="fill" objectFit='cover' className=' rounded-full bg-gradient-to-tr' />
           </div>
 
-          <h1>Hello</h1>
+          <h1>here's some of my work</h1>
         </section>
 
         <section>
@@ -68,30 +83,30 @@ export default function Home() {
 
           <div>
             <div className='text-center shadow-xl p-10 my-10'>
-              <Image width={100} height={100} />
-              <h3 className='text-lg font-medium pt=8 pb-2'>App 1</h3>
+              <Image src={app1} width={100} height={100} />
+              <h3 className='text-lg font-medium pt=8 pb-2'>Mood-Booster</h3>
               <p className='py-2'>
-                insert app description
+                an app with daily dose of randomized humor and mood-boosting text that you can favorite and save for later
               </p>
             </div>
           </div>
 
           <div>
             <div className='text-center shadow-xl p-10 my-10'>
-              <Image width={100} height={100} />
-              <h3 className='text-lg font-medium pt=8 pb-2'>App 2</h3>
+              <Image src={app2} width={100} height={100} />
+              <h3 className='text-lg font-medium pt=8 pb-2'>Schedule App</h3>
               <p className='py-2'>
-                insert app description
+                an app with daily hour to hour schedule managing info you can put in and help manage tasks with
               </p>
             </div>
           </div>
 
           <div>
             <div className='text-center shadow-xl p-10 my-10'>
-              <Image width={100} height={100} />
-              <h3 className='text-lg font-medium pt=8 pb-2'>App 3</h3>
+              <Image src={app3} width={100} height={100} />
+              <h3 className='text-lg font-medium pt=8 pb-2'>Tech Blog </h3>
               <p className='py-2'>
-                insert app description
+                an app you can create an account and login to post blogs from your profile and view others posts
               </p>
             </div>
           </div>
