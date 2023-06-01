@@ -1,1 +1,3 @@
 # React-Portfolio
+
+I needed a portfolio that enables me to show off some of the new technologies I'm using and better apps I've worked on. When you open the page you have the navbar on top that you can use to navigate the page. right below that there's a night-mode switch and resume download link. As you scroll down you have all the information about me and the apps I'm showcasing, topped of with my social links at the footer.
